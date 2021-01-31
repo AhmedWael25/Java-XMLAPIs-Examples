@@ -41,7 +41,6 @@ public class MyCustomSAXHandler extends DefaultHandler {
 
         switch (qName){
             case  MENU_BAR:
-                System.out.println("IN MENU BAR");
                 menuBar = new MenuBar();
                 break;
             case MENU:
@@ -50,7 +49,6 @@ public class MyCustomSAXHandler extends DefaultHandler {
                     menu = new Menu();
                     menu.setText(attributes.getValue(0));
                     menuBar.getMenus().add(menu);
-                    System.out.println("attts: " + attributes.getValue(0));
                 }
                 break;
         }
@@ -66,26 +64,20 @@ public class MyCustomSAXHandler extends DefaultHandler {
 
             while (m.find()){
                 elementString =m.group();
-                System.out.println("MAATCHEEER : "+m.group());
             }
         }
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
         super.endElement(uri, localName, qName);
-//        System.out.println(qName);
 
         switch (qName){
             case MENU_ITEM:
-                System.out.println("Name2222: "+elementString );
                 MenuItem menuItem = new MenuItem(elementString);
                 menu.getItems().add(menuItem);
                 break;
             }
     }
-
-
-
 
     @Override
     public void startDocument() throws SAXException {

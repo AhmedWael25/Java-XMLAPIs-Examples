@@ -31,31 +31,23 @@ public class PrimaryController implements Initializable {
         try {
             XMLDocument = getDocumentFromXMLFile(XMLFile);
             root= XMLDocument.getDocumentElement();
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+            MenuBar menuBar = populateMenu(root);
+            mainContainer.setTop(menuBar);
+        }  catch (IOException  | SAXException | ParserConfigurationException e) {
             e.printStackTrace();
         }
-        MenuBar menuBar = populateMenu(root);
-        mainContainer.setTop(menuBar);
+
 
         System.out.println("========================================");
 
         MyCustomSAXHandler myCustomSAXHandler = new MyCustomSAXHandler();
         try {
             initSAXParser(XMLFile, myCustomSAXHandler);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (ParserConfigurationException e) {
+            MenuBar menuBar2 = myCustomSAXHandler.getMenuBar();
+            mainContainer.setCenter(menuBar2);
+        } catch (IOException  | SAXException | ParserConfigurationException e) {
             e.printStackTrace();
         }
-
-        MenuBar menuBar2 = myCustomSAXHandler.getMenuBar();
-        mainContainer.setCenter(menuBar2);
 
     }
 

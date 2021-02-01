@@ -1,19 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<MenuBar>
-    <Menu name="file">
-        <MenuItem>New</MenuItem>
-        <MenuItem>Open</MenuItem>
-        <MenuItem>Save</MenuItem>
-        <MenuItem>Exit</MenuItem>
-    </Menu><Menu name="edit">
-        <MenuItem>Undo</MenuItem>
-        <MenuItem>Redo</MenuItem>
-        <MenuItem>Cut</MenuItem>
-        <MenuItem>Copy</MenuItem>
-    </Menu><Menu name="help">
-        <MenuItem>About</MenuItem>
-        <MenuItem>About2</MenuItem>
-    </Menu>
-</MenuBar>
+<MenuBar><Menu name="file"><MenuItem>New</MenuItem><MenuItem>Open</MenuItem><MenuItem>Save</MenuItem><MenuItem>Exit</MenuItem></Menu><Menu name="edit"><MenuItem>Undo</MenuItem><MenuItem>Redo</MenuItem><MenuItem>Cut</MenuItem><MenuItem>Copy</MenuItem></Menu><Menu name="help"><MenuItem>About</MenuItem><MenuItem>About2</MenuItem></Menu></MenuBar>

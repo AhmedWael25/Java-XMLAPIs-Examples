@@ -20,10 +20,10 @@ public class JAXBCodeFirstRunner {
         Marshaller marshaller = jaxbContext.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         marshaller.marshal(student, System.out);
-        marshaller.marshal(student, new FileWriter("products.fxml"));
+        marshaller.marshal(student, new FileWriter("products.xml"));
 
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-        Product unmarshalledStudent = (Product) unmarshaller.unmarshal(new FileReader("products.fxml"));
+        Product unmarshalledStudent = (Product) unmarshaller.unmarshal(new FileReader("products.xml"));
         System.out.println(unmarshalledStudent);
     }
 }

@@ -72,7 +72,6 @@ public class SAXCallBackHandlerStudents extends DefaultHandler {
         }
     }
 
-
     public  ArrayList<Student> getStudents(){
         return  students;
     }

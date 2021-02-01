@@ -14,6 +14,7 @@ public class JAXBSchemaFirstRunner {
     public static void main(String[] args) throws  Exception{
 
         JAXBContext jaxbContext = JAXBContext.newInstance("JAXBShemaFirstGeneratedExample");
+//        JAXBContext jaxbContext = JAXBContext.newInstance("JAXBShemaFirstGeneratedExample");
         Marshaller marshaller = jaxbContext.createMarshaller();
         Unmarshaller unmarshaller =  jaxbContext.createUnmarshaller();
 

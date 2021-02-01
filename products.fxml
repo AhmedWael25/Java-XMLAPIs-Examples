@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<product>
+    <id>50</id>
+    <name>Car</name>
+    <shippingList>
+        <streetname>street gamed</streetname>
+        <streetno>65</streetno>
+    </shippingList>
+    <shippingList>
+        <streetname>street msh gamed</streetname>
+        <streetno>43</streetno>
+    </shippingList>
+</product>

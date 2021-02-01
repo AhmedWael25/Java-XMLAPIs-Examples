@@ -1,0 +1,2 @@
+schemagen src\main\java\JAXBCodeFirstExample\Product.java src\main\java\JAXBCodeFirstExample\Address.java
+xjc -d src\main\java -p JAXBShemaFirstGeneratedExample src\main\resources\person.xsd

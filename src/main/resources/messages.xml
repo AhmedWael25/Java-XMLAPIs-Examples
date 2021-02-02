@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<messages>
+    <message ><from>from1</from> <to>to1</to><body>BOdY1asdasd</body></message>
+    <message><from>from2</from> <to>to2</to> <body>BOdY2asdasd</body> </message>
+    <message ><from>from3</from><to>to3</to><body>BOdY3234234</body> </message>
+</messages>
